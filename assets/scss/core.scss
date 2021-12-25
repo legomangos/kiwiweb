@@ -146,6 +146,7 @@
         word-break: break-word;
         background-position: center center !important;
         background-size: cover !important;
+        -webkit-background-size: cover !important;
         background-color: base.$font-color;
         margin-bottom: 10px;
         text-shadow: 0 0 14px white;
