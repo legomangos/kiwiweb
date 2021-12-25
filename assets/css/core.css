@@ -25,7 +25,6 @@ body {
 }
 
 #content {
-  margin: 0 0 0 9px;
   width: 100%;
 }
 
@@ -44,6 +43,7 @@ body {
 #content-container {
   display: flex;
   align-items: flex-start;
+  gap: 0px 9px;
 }
 
 #logo {
