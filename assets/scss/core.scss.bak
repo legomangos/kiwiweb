@@ -1,0 +1,212 @@
+// core.scss
+@use 'base';
+@use 'colors';
+
+#masthead,
+#content-container,
+#masthead-container,
+#footer-container {
+    width: 584px;
+    margin: 0 auto;
+}
+
+#masthead-container,
+#content-container {
+    margin: 10px 0 0 0;
+}
+
+#content {
+    margin: 0 0 0 9px;
+    width: 100%;
+}
+
+#sidebar .window {
+	width: 180px;
+}
+
+#footer {
+	@extend %window-grad-color;
+    -webkit-box-shadow: colors.$window-box-shadow;
+    box-shadow: colors.$window-box-shadow;
+	border: 1px solid base.$font-color;
+    text-align: center;
+    padding: 4px;
+}
+
+#content-container {
+    display: flex;
+    align-items: flex-start;
+}
+
+#logo {
+    background: no-repeat url("/assets/img/banner-kiwi.png");
+    background-size: 584px 84px;
+    background-position: center center;
+    -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+    border: 1px solid #000;
+    height: 82px;
+    width: 582px;
+}
+
+.nav-list {
+    list-style: inside none;
+    color: base.$font-color;
+	a {
+	    color: base.$font-color;
+		text-decoration: none;
+		font-family: base.$font-semibold;
+		font-weight: 501;
+	}
+	li {
+	    padding: 1px 3px 1px 4px;
+		border-bottom: 1px solid #000;
+	}
+	:hover {
+		background-color: #fff;
+		transition: all 0.2s ease;
+	}
+}
+
+%window-grad-color {
+	background: -webkit-linear-gradient(top, colors.$window-grad-color);
+	background: linear-gradient(to-bottom, colors.$window-grad-color);
+	background-color: colors.$window-bg-color;
+}
+
+.window {
+    margin: 0 0 10px 0;
+    border: 1px solid base.$font-color;
+    -webkit-box-shadow: colors.$window-box-shadow;
+    box-shadow: colors.$window-box-shadow;
+	.window-titlebar {
+		-webkit-box-shadow: base.$window-titlebar-box-shadow;
+		box-shadow: base.$window-titlebar-box-shadow;
+		font-family: base.$font-semibold;
+		font-weight: 501;
+		max-height: 17px;
+		padding: 3px 3px 2px 3px;
+		color: colors.$titlebar-text-color;
+		border-bottom: 1px solid base.$font-color;
+		background: -webkit-linear-gradient(top, colors.$titlebar-grad-color);
+		background: linear-gradient(to bottom, colors.$titlebar-grad-color);
+		background-color: colors.$titlebar-bg-color;
+		.nav-more {
+			font-size: 10px;
+			text-decoration: none;
+			color: colors.$titlebar-text-color;
+			font-family: base.$font-family;
+			font-weight: 500;
+			:hover {
+				text-decoration: underline !important;
+			}
+		}
+		.gallery-date {
+			float: right;
+			font-family: base.$font-semibold;
+		}
+	}
+	.window-content, .window-content-padding {
+		@extend %window-grad-color;
+		-webkit-box-shadow: inset 0px 10px 4px -8px #787878;
+		box-shadow: inset 0px 10px 4px -8px #787878;
+	}
+	.window-content-padding {
+		padding: 2px;
+	}
+}
+
+.mini-gallery {
+    padding-top: 5px;
+    padding-bottom: 2px;
+	.nav-image img {
+		display: block;
+		margin: 0 auto;
+		border: 1px solid #000;
+		width: 160px;
+	}
+	.nav-title span {
+		display: block;
+		text-align: center;
+	}
+}
+
+.card-link {
+    color: #fff;
+    text-decoration: none;
+	.news-card {
+		border: 1px solid base.$font-color;
+		min-height: 60px;
+		position: relative;
+		word-break: break-word;
+		background-position: center center !important;
+		background-size: cover !important;
+		background-color: base.$font-color;
+		margin-bottom: 10px;
+		text-shadow: 0 0 14px white;
+		-webkit-box-shadow: colors.$window-box-shadow;
+		box-shadow: colors.$window-box-shadow;
+	}
+	.background-overlay {
+		padding: 4px;
+		min-height: 60px;
+		background: rgba(0, 0, 0, 0.8);
+		-webkit-box-shadow: base.$window-titlebar-box-shadow;
+		box-shadow: base.$window-titlebar-box-shadow;
+	}
+	.card-content {
+		.card-header {
+			font-family: base.$font-semibold;
+			font-weight: 501;
+			font-size: 14px;
+		}
+		.card-date {
+			font-size: 12px;
+		}
+		.card-desc {
+			position: absolute;
+			bottom: 4px;
+			font-size: 11px;
+		}
+	}
+}
+
+.gallery-grid {
+    display: grid;
+    margin-top: 2px;
+    grid-gap: 2px;
+    grid-template-columns: repeat(auto-fit, 126px);
+	.gallery-item {
+		display: flex;
+		flex-direction: column;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		width: 126px;
+		.gallery-item-content {
+			display: block;
+			margin: auto;
+			p {
+				margin: 0;
+				text-align: center;
+				font-family: base.$font-semibold;
+				font-weight: 501;
+			}
+			span {
+				font-size: 11px;
+				text-align: center;
+				display: block;
+				max-width: 122px;
+				overflow-x: hidden;
+				text-overflow: ellipsis;
+				white-space: nowrap;
+			}
+			img {
+				display: block;
+				margin: 0 auto;
+				width: 120px;
+				height: 96px;
+				border: 1px solid base.$font-color;
+			}
+		}
+	}
+}

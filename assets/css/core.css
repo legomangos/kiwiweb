@@ -1,0 +1,219 @@
+body {
+  font: 12px -apple-system, BlinkMacSystemFont, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #172142;
+  background: -webkit-linear-gradient(top, #172142 0%, #132039 50%, #0E1523 100%);
+  background: linear-gradient(to bottom, #172142 0%, #132039 50%, #0E1523 100%);
+  background-attachment: fixed;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#masthead,
+#content-container,
+#masthead-container,
+#footer-container {
+  width: 584px;
+  margin: 0 auto;
+}
+
+#masthead-container,
+#content-container {
+  margin: 10px 0 0 0;
+}
+
+#content {
+  margin: 0 0 0 9px;
+  width: 100%;
+}
+
+#sidebar .window {
+  width: 180px;
+}
+
+#footer {
+  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  border: 1px solid #000;
+  text-align: center;
+  padding: 4px;
+}
+
+#content-container {
+  display: flex;
+  align-items: flex-start;
+}
+
+#logo {
+  background: no-repeat url("/assets/img/banner-kiwi.png");
+  background-size: 584px 84px;
+  background-position: center center;
+  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  border: 1px solid #000;
+  height: 82px;
+  width: 582px;
+}
+
+.nav-list {
+  list-style: inside none;
+  color: #000;
+}
+.nav-list a {
+  color: #000;
+  text-decoration: none;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 501;
+}
+.nav-list li {
+  padding: 1px 3px 1px 4px;
+  border-bottom: 1px solid #000;
+}
+.nav-list :hover {
+  background-color: #fff;
+  transition: all 0.1s ease;
+}
+
+.window .window-content, .window .window-content-padding, #footer {
+  background: -webkit-linear-gradient(top, #f2f2f2 0%, #DFDFDF 100%);
+  background: linear-gradient(to-bottom, #f2f2f2 0%, #DFDFDF 100%);
+  background-color: #f2f2f2;
+}
+
+.window {
+  margin: 0 0 10px 0;
+  border: 1px solid #000;
+  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+}
+.window .window-titlebar {
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 501;
+  max-height: 17px;
+  padding: 3px 3px 2px 3px;
+  color: #fff;
+  border-bottom: 1px solid #000;
+  background: -webkit-linear-gradient(top, #0F162A 0%, #1A264B 100%);
+  background: linear-gradient(to bottom, #0F162A 0%, #1A264B 100%);
+  background-color: #0F162A;
+}
+.window .window-titlebar .nav-more {
+  font-size: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 500;
+}
+.window .window-titlebar .nav-more :hover {
+  text-decoration: underline !important;
+}
+.window .window-titlebar .gallery-date {
+  float: right;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+}
+.window .window-content, .window .window-content-padding {
+  -webkit-box-shadow: inset 0px 10px 4px -8px #787878;
+  box-shadow: inset 0px 10px 4px -8px #787878;
+}
+.window .window-content-padding {
+  padding: 2px;
+}
+
+.mini-gallery {
+  padding-top: 5px;
+  padding-bottom: 2px;
+}
+.mini-gallery .nav-image img {
+  display: block;
+  margin: 0 auto;
+  border: 1px solid #000;
+  width: 160px;
+}
+.mini-gallery .nav-title span {
+  display: block;
+  text-align: center;
+}
+
+.card-link {
+  color: #fff;
+  text-decoration: none;
+}
+.card-link .news-card {
+  border: 1px solid #000;
+  min-height: 60px;
+  position: relative;
+  word-break: break-word;
+  background-position: center center !important;
+  background-size: cover !important;
+  background-color: #000;
+  margin-bottom: 10px;
+  text-shadow: 0 0 14px white;
+  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+}
+.card-link .background-overlay {
+  padding: 4px;
+  min-height: 60px;
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+}
+.card-link .card-content .card-header {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 501;
+  font-size: 14px;
+}
+.card-link .card-content .card-date {
+  font-size: 12px;
+}
+.card-link .card-content .card-desc {
+  position: absolute;
+  bottom: 4px;
+  font-size: 11px;
+}
+
+.gallery-grid {
+  display: grid;
+  margin-top: 2px;
+  grid-gap: 2px;
+  grid-template-columns: repeat(auto-fit, 126px);
+}
+.gallery-grid .gallery-item {
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 126px;
+}
+.gallery-grid .gallery-item .gallery-item-content {
+  display: block;
+  margin: auto;
+}
+.gallery-grid .gallery-item .gallery-item-content p {
+  margin: 0;
+  text-align: center;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 501;
+}
+.gallery-grid .gallery-item .gallery-item-content span {
+  font-size: 11px;
+  text-align: center;
+  display: block;
+  max-width: 122px;
+  overflow-x: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.gallery-grid .gallery-item .gallery-item-content img {
+  display: block;
+  margin: 0 auto;
+  width: 120px;
+  height: 96px;
+  border: 1px solid #000;
+}
+
+/*# sourceMappingURL=core.css.map */
