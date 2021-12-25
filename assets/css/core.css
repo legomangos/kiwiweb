@@ -48,6 +48,7 @@ body {
 
 #logo {
   background: no-repeat url("/assets/img/banner-kiwi.png");
+  -webkit-background-size: 584px 84px;
   background-size: 584px 84px;
   background-position: center center;
   -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
@@ -73,10 +74,12 @@ body {
 }
 .nav-list :hover {
   background-color: #fff;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
 }
 
-.window .window-content, .window .window-content-padding, #footer {
+.window .window-content,
+.window .window-content-padding, #footer {
   background: -webkit-linear-gradient(top, #f2f2f2 0%, #DFDFDF 100%);
   background: linear-gradient(to-bottom, #f2f2f2 0%, #DFDFDF 100%);
   background-color: #f2f2f2;
@@ -115,7 +118,8 @@ body {
   float: right;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
-.window .window-content, .window .window-content-padding {
+.window .window-content,
+.window .window-content-padding {
   -webkit-box-shadow: inset 0px 10px 4px -8px #787878;
   box-shadow: inset 0px 10px 4px -8px #787878;
 }
