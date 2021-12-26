@@ -42,6 +42,7 @@ body {
 
 #content-container {
   display: flex;
+  display: -ms-flexbox;
   align-items: flex-start;
   gap: 0px 9px;
 }
