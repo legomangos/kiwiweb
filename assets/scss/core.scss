@@ -1,6 +1,13 @@
 // core.scss
 @use 'base';
 @use 'colors';
+@mixin prefix($property, $value, $prefixes) {
+  @each $prefix in $prefixes {
+    -#{$prefix}-#{$property}: $value;
+  }
+  #{$property}: $value;
+}
+
 #masthead,
 #content-container,
 #masthead-container,
@@ -18,14 +25,15 @@
     width: 100%;
 }
 
-#sidebar .window {
-    width: 180px;
+#sidebar {
+	.window {
+		width: 180px;
+	}
 }
 
 #footer {
     @extend %window-grad-color;
-    -webkit-box-shadow: colors.$window-box-shadow;
-    box-shadow: colors.$window-box-shadow;
+	@include prefix(box-shadow, colors.$window-box-shadow, webkit);
     border: 1px solid base.$font-color;
     text-align: center;
     padding: 4px;
@@ -39,12 +47,10 @@
 }
 
 #logo {
+	@include prefix(background-size, 584px 84px, webkit);
+	@include prefix(box-shadow, 0px 12px 23px -14px rgba(0, 0, 0, 0.75), webkit);
     background: no-repeat url("/assets/img/banner-kiwi.png");
-    -webkit-background-size: 584px 84px;
-    background-size: 584px 84px;
     background-position: center center;
-    -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
-    box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
     border: 1px solid #000;
     height: 82px;
     width: 582px;
@@ -63,12 +69,12 @@
         padding: 1px 3px 1px 4px;
         border-bottom: 1px solid #000;
     }
-     :hover {
+    &:hover {
         background-color: #fff;
         transition: all 0.5s ease;
         -webkit-transition: all 0.5s ease;
     }
-    li[end] {
+    [end] {
         border-bottom: 0;
     }
 }
@@ -80,13 +86,11 @@
 }
 
 .window {
+	@include prefix(box-shadow, colors.$window-box-shadow, webkit);
     margin: 0 0 10px 0;
     border: 1px solid base.$font-color;
-    -webkit-box-shadow: colors.$window-box-shadow;
-    box-shadow: colors.$window-box-shadow;
-    .window-titlebar {
-        -webkit-box-shadow: base.$window-titlebar-box-shadow;
-        box-shadow: base.$window-titlebar-box-shadow;
+    &-titlebar {
+		@include prefix(box-shadow, base.$window-titlebar-box-shadow, webkit);
         font-family: base.$font-semibold;
         font-weight: 501;
         max-height: 17px;
@@ -102,7 +106,7 @@
             color: colors.$titlebar-text-color;
             font-family: base.$font-family;
             font-weight: 500;
-             :hover {
+            &:hover {
                 text-decoration: underline !important;
             }
         }
@@ -111,13 +115,12 @@
             font-family: base.$font-semibold;
         }
     }
-    .window-content,
-    .window-content-padding {
+    &-content,
+    &-content-padding {
         @extend %window-grad-color;
-        -webkit-box-shadow: inset 0px 10px 4px -8px #787878;
-        box-shadow: inset 0px 10px 4px -8px #787878;
+		@include prefix(box-shadow, inset 0px 10px 4px -8px #787878, webkit);
     }
-    .window-content-padding {
+    &-content-padding {
         padding: 2px;
     }
 }
@@ -141,25 +144,22 @@
     color: #fff;
     text-decoration: none;
     .news-card {
+		@include prefix(background-size, cover !important, webkit);
+		@include prefix(box-shadow, colors.$window-box-shadow, webkit);
         border: 1px solid base.$font-color;
         min-height: 60px;
         position: relative;
         word-break: break-word;
         background-position: center center !important;
-        background-size: cover !important;
-        -webkit-background-size: cover !important;
         background-color: base.$font-color;
         margin-bottom: 10px;
         text-shadow: 0 0 14px white;
-        -webkit-box-shadow: colors.$window-box-shadow;
-        box-shadow: colors.$window-box-shadow;
     }
     .background-overlay {
+		@include prefix(box-shadow, base.$window-titlebar-box-shadow, webkit);
         padding: 4px;
         min-height: 60px;
         background: rgba(0, 0, 0, 0.8);
-        -webkit-box-shadow: base.$window-titlebar-box-shadow;
-        box-shadow: base.$window-titlebar-box-shadow;
     }
     .card-content {
         .card-header {

@@ -48,12 +48,12 @@ body {
 }
 
 #logo {
-  background: no-repeat url("/assets/img/banner-kiwi.png");
   -webkit-background-size: 584px 84px;
   background-size: 584px 84px;
-  background-position: center center;
   -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  background: no-repeat url("/assets/img/banner-kiwi.png");
+  background-position: center center;
   border: 1px solid #000;
   height: 82px;
   width: 582px;
@@ -73,29 +73,28 @@ body {
   padding: 1px 3px 1px 4px;
   border-bottom: 1px solid #000;
 }
-.nav-list :hover {
+.nav-list:hover {
   background-color: #fff;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
 }
-.nav-list li[end] {
+.nav-list [end] {
   border-bottom: 0;
 }
 
-.window .window-content,
-.window .window-content-padding, #footer {
+.window-content, .window-content-padding, #footer {
   background: -webkit-linear-gradient(top, #f2f2f2 0%, #DFDFDF 100%);
   background: linear-gradient(to-bottom, #f2f2f2 0%, #DFDFDF 100%);
   background-color: #f2f2f2;
 }
 
 .window {
-  margin: 0 0 10px 0;
-  border: 1px solid #000;
   -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
   box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  margin: 0 0 10px 0;
+  border: 1px solid #000;
 }
-.window .window-titlebar {
+.window-titlebar {
   -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
   box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
@@ -108,26 +107,25 @@ body {
   background: linear-gradient(to bottom, #0F162A 0%, #1A264B 100%);
   background-color: #0F162A;
 }
-.window .window-titlebar .nav-more {
+.window-titlebar .nav-more {
   font-size: 10px;
   text-decoration: none;
   color: #fff;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   font-weight: 500;
 }
-.window .window-titlebar .nav-more :hover {
+.window-titlebar .nav-more:hover {
   text-decoration: underline !important;
 }
-.window .window-titlebar .gallery-date {
+.window-titlebar .gallery-date {
   float: right;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
-.window .window-content,
-.window .window-content-padding {
+.window-content, .window-content-padding {
   -webkit-box-shadow: inset 0px 10px 4px -8px #787878;
   box-shadow: inset 0px 10px 4px -8px #787878;
 }
-.window .window-content-padding {
+.window-content-padding {
   padding: 2px;
 }
 
@@ -151,25 +149,25 @@ body {
   text-decoration: none;
 }
 .card-link .news-card {
+  -webkit-background-size: cover !important;
+  background-size: cover !important;
+  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
   border: 1px solid #000;
   min-height: 60px;
   position: relative;
   word-break: break-word;
   background-position: center center !important;
-  background-size: cover !important;
-  -webkit-background-size: cover !important;
   background-color: #000;
   margin-bottom: 10px;
   text-shadow: 0 0 14px white;
-  -webkit-box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 12px 23px -14px rgba(0, 0, 0, 0.75);
 }
 .card-link .background-overlay {
+  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
+  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
   padding: 4px;
   min-height: 60px;
   background: rgba(0, 0, 0, 0.8);
-  -webkit-box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
-  box-shadow: inset 0 1px 0 0 rgba(255, 255, 255, 0.1), inset 0 -1px 0 0 rgba(255, 255, 255, 0.03);
 }
 .card-link .card-content .card-header {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
