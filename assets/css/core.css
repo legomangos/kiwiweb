@@ -73,7 +73,7 @@ body {
   padding: 1px 3px 1px 4px;
   border-bottom: 1px solid #000;
 }
-.nav-list:hover {
+.nav-list :hover {
   background-color: #fff;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
@@ -119,7 +119,8 @@ body {
 }
 .window-titlebar .gallery-date {
   float: right;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-weight: 400;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 }
 .window-content, .window-content-padding {
   -webkit-box-shadow: inset 0px 10px 4px -8px #787878;
