@@ -1,8 +1,11 @@
 ﻿// _base.scss
 
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap');
+
 // Variables
-$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-$font-semibold: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Inter, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$font-semibold: -apple-system, BlinkMacSystemFont, "Segoe UI Semibold", "Segoe UI", Inter, Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
 $font-color: #000;
 $window-titlebar-box-shadow: inset 0 1px 0 0 rgb(255 255 255 / 10%), inset 0 -1px 0 0 rgb(255 255 255 / 3%);
 
