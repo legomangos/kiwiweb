@@ -61,6 +61,15 @@ hr {
     border: 1px solid base.$font-color;
     text-align: center;
     padding: 4px;
+    a {
+        color: base.$font-color;
+        font-family: base.$font-semibold;
+        font-weight: 501;
+        text-decoration: none;
+        &:hover {
+            text-decoration: underline;
+        }
+    }
 }
 
 #content-container {
